@@ -5,7 +5,7 @@ module.exports = {
     return queryInterface.bulkInsert("Contacts", [
       {
         firstname: "Carlos",
-        lastname: "Hidalgo",
+        lastname: "Luran",
         phone: "1234567",
         email: "test@test.com",
         createdAt: new Date().toDateString(),
@@ -13,9 +13,9 @@ module.exports = {
       },
       {
         firstname: "Maria",
-        lastname: "Vidaurre",
-        phone: "33344556",
-        email: "mafe@test1.com",
+        lastname: "Lalalan",
+        phone: "",
+        email: "mati@test1.com",
         createdAt: new Date().toDateString(),
         updatedAt: new Date().toDateString()
       }

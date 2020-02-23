@@ -12,10 +12,10 @@ module.exports = {
         updatedAt: new Date().toDateString()
       },
       {
-        firstname: "Alfonso",
-        lastname: "Arbizu",
-        phone: "89101123",
-        email: "test@test1.com",
+        firstname: "Maria",
+        lastname: "Vidaurre",
+        phone: "83663556",
+        email: "mafe@test1.com",
         createdAt: new Date().toDateString(),
         updatedAt: new Date().toDateString()
       }

@@ -14,15 +14,28 @@ const entity = args[0].split(":")[1];
 
 switch (command) {
   case CRUD.CREATE:
-    console.log("Created!!");
-    args(1).map(arg => {
+    const data = {};
+    args.slice(1).map(arg => {
       const tmp = arg.split("=");
       data[tmp[0].substring(2)] = tmp[1];
     });
     console.log(data);
+
+    db[entity]
+      .create(data)
+      .then(console.log("Contact Created!"))
+      .catch(console.log);
+
     break;
+
   case CRUD.READ:
-    console.log("Read!!");
+    db[entity]
+      .findAll()
+      .then(console.log)
+      .catch(console.log);
+
+    break;
+
   default:
     console.log("Operation not found");
 }

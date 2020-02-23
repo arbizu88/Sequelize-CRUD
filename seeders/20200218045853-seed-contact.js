@@ -14,7 +14,7 @@ module.exports = {
       {
         firstname: "Maria",
         lastname: "Vidaurre",
-        phone: "83663556",
+        phone: "33344556",
         email: "mafe@test1.com",
         createdAt: new Date().toDateString(),
         updatedAt: new Date().toDateString()
